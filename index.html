@@ -8,13 +8,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <section id="home">
+    <section id="home" tabindex="0">
         <p id="intro">Hey, my name is Chris Anastasi.<br>I'm a front-end web developer.</p>
     </section>
-    <section id="about">
+    <section id="about" tabindex="0">
         <div>Creating is my <span class="highlight">passion</span>. A concept lands on my plate and ideas start to stir.</div>
     </section>
-    <section id="projects">
+    <section id="projects" tabindex="0">
             <!-- placeholders -->
             <div id="projectsContainer">
                 <img src="media\me.png" alt="me">
@@ -25,14 +25,16 @@
                 <img src="media\me.png" alt="me">
             </div>
     </section>
-    <section id="contact">
+    <section id="contact" tabindex="0">
         <form method="POST" action="https://formspree.io/stachedata@gmail.com">
-            <input type="email" name="email" placeholder="Your email goes here" autocomplete="off">
+            <input type="email" name="email" placeholder="Your email goes here" autocomplete="off" required>
             <br>
             <textarea name="message" placeholder="Your thoughts, questions, and suggestions go here"></textarea>
             <br>
             <button type="submit">Send</button>
         </form>
+        <img src="media\GitHub-Mark-64px.png" alt="GitHub">
+        <img src="media\In-Blue-72@2x.png" alt="LinkedIn">
         <!-- <address>
             <a href="mailto:stachedata@gmail.com">stachedata@gmail.com</a><br/>
         </address> -->
