@@ -47,8 +47,8 @@ section:focus{
 #projectsContainer{
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -57,17 +57,17 @@ section:focus{
 .project{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 300px;
     width: 300px;
-    margin: 50px;
+    margin: 30px 50px;
     padding: 25px;
     background-color: whitesmoke;
-    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .projectIcon{
-    height: 35px;
-    width: 50px;
+    transform: scale(1.5);
     margin: 45px 0 20px 0;
 }
 
