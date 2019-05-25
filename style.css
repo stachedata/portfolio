@@ -36,7 +36,12 @@ html,body{
 
 a{
     text-decoration: none;
-    color: black;
+    color: pink;
+}
+
+h1{
+    margin: 15px;
+    font-size: 95px;
 }
 
 section:focus{
@@ -50,22 +55,31 @@ section:focus{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 0;
+    padding: 0 0 5px 0;
 }
 
 #projects{
     display: flex;
+    width: 900px;
     height: 50%;
-    margin: 0 15%;
+    margin: 0 auto;
+    background-color: rgb(18, 19, 26);
 }
 
 #design{
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 
 #projectsContainer{
-    flex-grow: 2;
-    overflow: overlay;
+    overflow: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+#projectsContainer::-webkit-scrollbar { 
+    display: none;
 }
 
 #about{
@@ -84,6 +98,31 @@ section:focus{
     width: 245px;
     margin-top: 50px;
 }
+
+/* Content: #projects */
+@media only screen and (max-width: 900px) {
+    h1{
+        margin: auto;
+        font-size: 45px;
+    }
+    
+    #projects{
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #design{
+        height: 30%;
+        width: 100%;
+    }
+
+    #projectsContainer{
+        overflow: overlay;
+        height: 70%;
+    }
+}
+  
 
 /*Mobile*/
 @media only screen and (max-width: 415px) {
