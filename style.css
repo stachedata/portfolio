@@ -64,7 +64,7 @@ section:focus{
     width: 900px;
     height: 50%;
     margin: 0 auto;
-    background-color: rgb(18, 19, 26);
+    background-color: rgb(18, 19, 26, .40);
 }
 
 #design{
