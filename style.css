@@ -25,18 +25,22 @@
     font-style: normal;
 }
 
+:root{
+    --text-color: rgb(255, 192, 203);
+}
+
 html,body{
     display: flex;
     flex-direction: column;
     height: 100%;
     background-image: url('media/ep_naturalblack.png');
     background-repeat: repeat;
-    color: pink;
+    color: var(--text-color)
 }
 
 a{
     text-decoration: none;
-    color: pink;
+    color: var(--text-color)
 }
 
 h1{
