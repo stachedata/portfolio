@@ -71,19 +71,22 @@ section:focus{
     background-color: rgb(18, 19, 26, .40);
 }
 
-#design{
+#skills{
     height: 100%;
     width: 50%;
+    overflow: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+#projectsContainer::-webkit-scrollbar,#skills::-webkit-scrollbar { 
+    display: none;
 }
 
 #projectsContainer{
     overflow: auto;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
-}
-
-#projectsContainer::-webkit-scrollbar { 
-    display: none;
 }
 
 #about{
