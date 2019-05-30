@@ -38,11 +38,6 @@ html,body{
     color: var(--text-color)
 }
 
-a{
-    text-decoration: none;
-    color: var(--text-color)
-}
-
 h1{
     margin: 15px;
     font-size: 95px;
@@ -57,10 +52,11 @@ section:focus{
     outline: none;
 }
 
-.header{
+.sectionHeader{
     margin: 0 100px 0 0;
 }
 
+/* section */
 #title{
     font-family: 'KnewaveOutlineRegular';
     font-size: 50px;
@@ -72,7 +68,18 @@ section:focus{
     padding: 0 0 5px 0;
 }
 
+#about,#skills,#projects,#contact{
+    padding: 5px 15px;
+    background-color: rgb(18, 19, 26, .40);
+}
 
+/* section */
+#about{
+    display: flex;
+    justify-content: center;
+}
+
+/* section */
 #skills{
     display: flex;
     height: 60px;
@@ -81,49 +88,59 @@ section:focus{
 #skillsContainer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
     height: 100%;
     width: 100%;
 }
 
-svg{
+#skillsContainer > svg{
     height: 20%;
-    
-    /* transform: scale(.8) */
+    transform: scale(4)
 }
 
+/* section */
 #projects{
     display: flex;
-    height: 30%;
+    height: 40%;
     margin: 0 auto;
-    background-color: rgb(18, 19, 26, .40);
 }
 
-#projectsContainer::-webkit-scrollbar{ 
-    display: none;
-}
 
 #projectsContainer{
     overflow: auto;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
 }
-
-#about{
-    display: flex;
-    justify-content: center;
+#projectsContainer::-webkit-scrollbar{ 
+    display: none;
 }
 
+.project{
+    margin: 0 0 10px 0;
+}
+
+.project h2,p{
+    margin: 0;
+}
+
+.project a{
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.project svg{
+    fill: #FFFFFF;
+}
+
+/* section */
 #contact{
     display: flex;
     justify-content: center;
+    margin-top: 25px;
 }
 
-#iconsContainer{
+#contactIconsContainer{
     display: flex;
     justify-content: space-evenly;
     width: 245px;
