@@ -48,8 +48,17 @@ h1{
     font-size: 95px;
 }
 
+section{
+    width: 650px;
+    margin: auto;
+}
+
 section:focus{
     outline: none;
+}
+
+.header{
+    margin: 0 100px 0 0;
 }
 
 #title{
@@ -63,23 +72,38 @@ section:focus{
     padding: 0 0 5px 0;
 }
 
+
+#skills{
+    display: flex;
+    height: 60px;
+}
+
+#skillsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    height: 100%;
+    width: 100%;
+}
+
+svg{
+    height: 20%;
+    
+    /* transform: scale(.8) */
+}
+
 #projects{
     display: flex;
-    width: 900px;
-    height: 50%;
+    height: 30%;
     margin: 0 auto;
     background-color: rgb(18, 19, 26, .40);
 }
 
-#skills{
-    height: 100%;
-    width: 50%;
-    overflow: auto;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-
-#projectsContainer::-webkit-scrollbar,#skills::-webkit-scrollbar { 
+#projectsContainer::-webkit-scrollbar{ 
     display: none;
 }
 
