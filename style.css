@@ -38,13 +38,10 @@ html,body{
     color: var(--text-color)
 }
 
-h1{
-    margin: 15px;
-    font-size: 95px;
-}
 
 section{
-    width: 650px;
+    /* width: 650px; */
+    width: 90vmin;
     margin: auto;
 }
 
@@ -53,11 +50,11 @@ section:focus{
 }
 
 .sectionHeader{
-    margin: 0 100px 0 0;
+    margin: 0 10vmin 0 0;
 }
 
 /* section */
-#title{
+#header{
     font-family: 'KnewaveOutlineRegular';
     font-size: 50px;
     letter-spacing: 7px;
@@ -66,6 +63,11 @@ section:focus{
     justify-content: center;
     margin: 0;
     padding: 0 0 5px 0;
+}
+
+#title{
+    margin: 15px;
+    font-size: 5vmax;
 }
 
 #about,#skills,#projects,#contact{
@@ -82,12 +84,14 @@ section:focus{
 /* section */
 #skills{
     display: flex;
-    height: 60px;
+    height: 6.5%;
+    /* flex-wrap: wrap; */
 }
 
 #skillsContainer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 100%;
@@ -149,40 +153,20 @@ section:focus{
 
 /* Content: #projects */
 @media only screen and (max-width: 900px) {
-    h1{
-        margin: auto;
-        font-size: 45px;
+    #projects, #skills{
+        margin-top: 15px;
+    }
+
+    .sectionHeader{
+        padding-bottom: 12.5px; 
     }
     
     #projects{
-        height: auto;
-        width: 100%;
         flex-wrap: wrap;
     }
 
-    #design{
-        height: 30%;
-        width: 100%;
-    }
-
     #projectsContainer{
-        overflow: overlay;
-        height: 70%;
-    }
-}
-  
-
-/*Mobile*/
-@media only screen and (max-width: 415px) {
-
-}
-  
-/*Tablet*/
-@media only screen and (min-width: 416px) and (max-width: 960px) {
-
-}
-
-/*Desktop*/
-@media only screen and (min-width: 961px) {
-
+        height: 100%;
+        overflow: auto;
+    }    
 }
