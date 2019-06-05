@@ -1,173 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 @font-face {
-    font-family: 'kaushan-script';
-    src: url('fonts/kaushan-script_regular.eot');
-    src: url('fonts/kaushan-script_regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/kaushan-script_regular.woff') format('woff'),
-         url('fonts/kaushan-script_regular.ttf') format('truetype'),
-         url('fonts/kaushan-script_regular.svg#kaushan-script') format('svg');
-
-    font-family: 'KnewaveRegular';
-    src: url('fonts/knewave-webfont.eot');
-    src: url('fonts/knewave-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/knewave-webfont.woff') format('woff'),
-         url('fonts/knewave-webfont.ttf') format('truetype'),
-         url('fonts/knewave-webfont.svg#KnewaveRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-    font-family: 'KnewaveOutlineRegular';
-    src: url('fonts/knewave-outline-webfont.eot');
-    src: url('fonts/knewave-outline-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/knewave-outline-webfont.woff') format('woff'),
-         url('fonts/knewave-outline-webfont.ttf') format('truetype'),
-         url('fonts/knewave-outline-webfont.svg#KnewaveOutlineRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'KnewaveOutlineRegular';
+  src: url('fonts/knewave-outline-webfont.eot');
+  src: url('fonts/knewave-outline-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/knewave-outline-webfont.woff') format('woff'),
+    url('fonts/knewave-outline-webfont.ttf') format('truetype'),
+    url('fonts/knewave-outline-webfont.svg#KnewaveOutlineRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
-    --text-color: rgb(255, 192, 203);
+:root {
+  --text-color: rgb(255, 192, 203);
 }
 
-html,body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-image: url('media/ep_naturalblack.png');
-    background-repeat: repeat;
-    color: var(--text-color)
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('media/ep_naturalblack.png');
+  background-repeat: repeat;
+  color: var(--text-color);
 }
 
-section{
-    /* width: 650px; */
-    width: 90vmin;
-    margin: auto;
+section {
+  /* width: 650px; */
+  width: 90vmin;
+  margin: auto;
 }
 
-section:focus{
-    outline: none;
+section:focus {
+  outline: none;
 }
 
-.sectionHeader{
-    margin: 0 10vmin 0 0;
+.sectionHeader {
+  margin: 0 10vmin 0 0;
 }
 
 /* section */
-#header{
-    font-family: 'KnewaveOutlineRegular';
-    font-size: 50px;
-    letter-spacing: 7px;
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    margin: 0;
-    padding: 0 0 5px 0;
+#header {
+  font-family: 'KnewaveOutlineRegular';
+  font-size: 50px;
+  letter-spacing: 7px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 5px 0;
 }
 
-#title{
-    margin: 15px;
-    font-size: 5vmax;
+#title {
+  margin: 15px;
+  font-size: 5vmax;
 }
 
-#about,#skills,#projects,#contact{
-    padding: 5px 15px;
-    background-color: rgb(18, 19, 26, .40);
-}
-
-/* section */
-#about{
-    display: flex;
-    justify-content: center;
-}
-
-/* section */
-#skills{
-    display: flex;
-    height: 6.5%;
-    /* flex-wrap: wrap; */
-}
-
-#skillsContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#skillsContainer > svg{
-    height: 20%;
-    transform: scale(4)
+#about,
+#skills,
+#projects,
+#contact {
+  padding: 5px 15px;
+  background-color: rgb(18, 19, 26, 0.4);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* section */
-#projects{
-    display: flex;
-    height: 40%;
-    margin: 0 auto;
-}
-
-
-#projectsContainer{
-    overflow: auto;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-#projectsContainer::-webkit-scrollbar{ 
-    display: none;
-}
-
-.project{
-    margin: 0 0 10px 0;
-}
-
-.project h2,p{
-    margin: 0;
-}
-
-.project a{
-    text-decoration: none;
-    color: var(--text-color)
-}
-
-.project svg{
-    fill: #FFFFFF;
+#about {
+  display: flex;
+  justify-content: center;
 }
 
 /* section */
-#contact{
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    height: auto;
+#skills {
+  display: flex;
+  height: 6.5%;
 }
 
-#contactIconsContainer{
-    display: flex;
-    justify-content: space-evenly;
-    width: 245px;
-    margin-top: auto;
+#skillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#skillsContainer > svg {
+  height: 20%;
+  transform: scale(4);
+}
+
+/* section */
+#projects {
+  display: flex;
+  height: 40%;
+  margin: 0 auto;
+}
+
+#projectsContainer {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#projectsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.project {
+  margin: 0 0 20px 0;
+}
+
+.project h3,
+p {
+  margin: 0 0 5px 0;
+}
+
+.project a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.project svg {
+  fill: #ffffff;
+}
+
+/* section */
+#contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  height: auto;
+}
+
+#contactIconsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 245px;
+  margin-top: auto;
 }
 
 /* Content: #projects */
 @media only screen and (max-width: 900px) {
-    #projects, #skills{
-        margin-top: 15px;
-    }
+  #projects,
+  #skills {
+    margin-top: 15px;
+  }
 
-    .sectionHeader{
-        padding-bottom: 12.5px; 
-    }
-    
-    #projects{
-        flex-wrap: wrap;
-    }
+  .sectionHeader {
+    padding-bottom: 12.5px;
+  }
 
-    #projectsContainer{
-        height: 100%;
-        overflow: auto;
-    }    
+  #projects {
+    flex-wrap: wrap;
+  }
+
+  #projectsContainer {
+    height: 100%;
+    overflow: auto;
+  }
 }
