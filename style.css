@@ -38,7 +38,6 @@ html,body{
     color: var(--text-color)
 }
 
-
 section{
     /* width: 650px; */
     width: 90vmin;
@@ -60,6 +59,7 @@ section:focus{
     letter-spacing: 7px;
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: center;
     margin: 0;
     padding: 0 0 5px 0;
@@ -142,13 +142,14 @@ section:focus{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    height: auto;
 }
 
 #contactIconsContainer{
     display: flex;
     justify-content: space-evenly;
     width: 245px;
-    margin-top: 50px;
+    margin-top: auto;
 }
 
 /* Content: #projects */
