@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 @font-face {
   font-family: 'KnewaveOutlineRegular';
   src: url('fonts/knewave-outline-webfont.eot');
@@ -13,7 +12,7 @@
 }
 
 :root {
-  --text-color: rgb(255, 192, 203);
+  --text-color: rgb(245, 146, 175);
 }
 
 html,
@@ -59,13 +58,24 @@ section:focus {
   text-shadow: var(--text-color) 0 2px 6px;
 }
 
+#contentContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    justify-content: space-evenly;
+    /* background-color: rgba(30, 31, 37, 0.4);   */
+  font-family: 'Inconsolata', monospace;
+
+}
+
 #about,
 #skills,
 #projects,
 #contact {
   padding: 5px 15px;
-  /* background-color: rgb(18, 19, 26, 0.6);   */
-  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgba(30, 31, 37, 0.4);  
+  font-family: 'Inconsolata', monospace;
 }
 
 /* section */
