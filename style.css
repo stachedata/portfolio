@@ -71,8 +71,7 @@ section:focus {
 
 #about,
 #skills,
-#projects,
-#contact {
+#projects{
   padding: 5px 15px;
   background-color: rgba(30, 31, 37, 0.4);  
   font-family: 'Inconsolata', monospace;
@@ -110,7 +109,7 @@ section:focus {
 /* section */
 #projects {
   display: flex;
-  height: 40%;
+  height: 43%;
   margin: 0 auto;
 }
 
