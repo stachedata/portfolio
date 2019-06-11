@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
+    <meta name="theme-color" content="#1e1f2566" />
+    <meta
+      name="Description"
+      content="The front-end webdeveloper Portfolio of Chris Anastasi"
+    />
+    <link rel='icon' href='media/fav.ico' type='image/x-icon'/ >
+    <title>Anastasi's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <section id="header" tabindex="0">
+    <section id="header">
       <h1 id="title">Portfolio</h1>
     </section>
     <div id="contentContainer">
-      <section id="about" tabindex="0">
+      <section id="about">
         <p>
           My name is Chris Anastasi, and I'm an aspiring front-end developer
           living in Lakewood, Ohio.
@@ -77,7 +83,7 @@
         </div>
       </section>
 
-      <section id="projects" tabindex="0">
+      <section id="projects">
         <h3 class="sectionHeader">Projects</h3>
         <div id="projectsContainer">
           <div class="project">
@@ -241,9 +247,9 @@
           </div>
         </div>
       </section>
-      <section id="contact" tabindex="0">
+      <section id="contact">
         <div id="contactIconsContainer">
-          <a href="mailto:stachedata@gmail.com">
+          <a href="mailto:cwanastasi@gmail.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -257,6 +263,7 @@
             </svg>
           </a>
           <a
+            aria-label="LinkedIn Profile"
             href="https://linkedin.com/in/cwanastasi"
             target="_blank"
             rel="noopener noreferrer"
@@ -274,6 +281,7 @@
             </svg>
           </a>
           <a
+            aria-label="GitHub Profile"
             href="https://github.com/stachedata"
             target="_blank"
             rel="noopener noreferrer"
@@ -290,6 +298,5 @@
         </div>
       </section>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
