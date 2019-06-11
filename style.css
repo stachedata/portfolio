@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: url('media/ep_black.webp');
+  background-image: url('media/ep_naturalblack.png');
   color: var(--text-color);
 }
 
